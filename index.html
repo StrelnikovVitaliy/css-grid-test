@@ -12,27 +12,31 @@
     <h3>Gr 1</h3>
     <div class="gr11">
         <h3>gr 1.1(w40)</h3>
-        <input size="5" type="text" class="f1" placeholder="F1">
-        <input size="5" ype="text" class="f2" placeholder="F2">
+        <label for="f1" class="f1">F1<input size="5" type="text" id="f1" placeholder="F1"></label>
+        <label for="f2" class="f2">F2<input size="5" type="text" id="f2" placeholder="F2"></label>
     </div>
     <div class="gr12">
         <h3>Gr1.2</h3>
         <div class="gr121">
             <h3>gr 1.2.1</h3>
-            <input size="5" type="text" class="f3" placeholder="F3">
-            <input size="5" type="text" class="f4" placeholder="F4">
+            <label for="f3" class="f3">F3<input size="5" type="text" id="f3" placeholder="F3"></label>
+            <label for="f4" class="f4">F4<input size="5" type="text" id="f4" placeholder="F4"></label>
         </div>
         <div class="gr122">
             <h3>gr 1.2.2</h3>
             <div class="gr1221">
                 <h3>gr 1.2.2.1</h3>
-                <input size="5" type="text" class="f5" placeholder="F5">
-                <input size="5" type="text" class="f6" placeholder="F6">
+                <label for="f5" class="f5">F5<input size="5" type="text" id="f5" placeholder="F5">
+                </label>
+                <label for="f6" class="f6">F6<input size="5" type="text" id="f6" placeholder="F6">
+                </label>
             </div>
             <div class="gr1222">
                 <h3>gr 1.2.2.2</h3>
-                <input size="5" type="text" class="f7" placeholder="F7">
-                <input size="5" type="text" class="f8" placeholder="F8">
+                <label for="f7" class="f7"> F7<input size="5" type="text" id="f7" placeholder="F7">
+                </label>
+                <label for="f8" class="f8"> F8<input size="5" type="text" id="f8" placeholder="F8">
+                </label>
             </div>
         </div>
     </div>
@@ -42,8 +46,10 @@
     <h3>Gr2</h3>
     <div class="gr21">
         <h3>Gr 2.1</h3>
-        <input size="5" type="text" class="f9" placeholder="F9">
-        <input size="5" type="text" class="f10" placeholder="F10">
+        <label for="f9" class="f9">F9<input size="5" type="text" id="f9" placeholder="F9">
+        </label>
+        <label for="f10" class="f10">F10<input size="5" type="text" id="f10" placeholder="F10">
+        </label>
     </div>
     <div class="gr22">
         <h3>Gr 2.2</h3>
@@ -51,26 +57,35 @@
             <h3>Gr 2.2.1</h3>
             <div class="gr2211">
                 <h3>Gr 2.2.2.1</h3>
-                <input size="5" type="text" class="f11" placeholder="F11">
-                <input size="5" type="text" class="f12" placeholder="F12">
+                <label for="f11" class="f11">F11 <input size="5" type="text" id="f11" placeholder="F11">
+                </label>
+                <label for="f12" class="f12">F12 <input size="5" type="text" id="f12" placeholder="F12">
+                </label>
             </div>
             <div class="gr2212">
                 <h3>Gr 2.2.1.2</h3>
-                <input size="5" type="text" class="f13" placeholder="F13">
-                <input size="5" type="text" class="f14" placeholder="F14">
+                <label for="f13" class="f13"> F13<input size="5" type="text" id="f13" placeholder="F13">
+                </label>
+                <label for="f14" class="f14"> F14<input size="5" type="text" id="f14" placeholder="F14">
+                </label>
             </div>
         </div>
-        <input size="5" type="text" class="f15" placeholder="F15">
+        <label for="f15" class="f15"> F15<input size="5" type="text" id="f15" placeholder="F15">
+        </label>
         <div class="gr222">
             <h3>Gr 2.2.2</h3>
-            <input size="5" type="text" class="f16" placeholder="F16">
-            <input size="5" type="text" class="f17" placeholder="F17">
+            <label for="f16" class="f16">F16 <input size="5" type="text" id="f16" placeholder="F16">
+            </label>
+            <label for="f17" class="f17">F17 <input size="5" type="text" id="f17" placeholder="F17">
+            </label>
         </div>
     </div>
     <div class="gr23">
         <h3>Gr 2.3</h3>
-        <input size="5" type="text" class="f18" placeholder="F18">
-        <input size="5" type="text" class="f19" placeholder="F19">
+        <label for="f18" class="f18">F18 <input size="5" type="text" id="f18" placeholder="F18">
+        </label>
+        <label for="f19" class="f19"> F19 <input size="5" type="text" id="f19" placeholder="F19">
+        </label>
     </div>
 </div>
 <style>
@@ -225,6 +240,11 @@
         grid-column: 1/2;
     }
 
+    label {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-gap: 0.5em;
+    }
 </style>
 </body>
 </html>
